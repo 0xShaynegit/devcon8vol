@@ -302,3 +302,7 @@ details.disclosure > summary:focus-visible { outline: 3px solid var(--marigold);
 @media (max-width: 560px) { .timeline { grid-template-columns: 1fr; } }
 .role:nth-child(6) { grid-column: span 2; }
 @media (max-width: 560px) { .role:nth-child(6) { grid-column: auto; } }
+
+/* touch targets: 44px minimum on standalone links */
+.site-footer a, .timeline .links a, .toc a { min-height: 44px; }
+.site-footer li + li { margin-top: 0; }
