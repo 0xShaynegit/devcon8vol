@@ -306,3 +306,22 @@ details.disclosure > summary:focus-visible { outline: 3px solid var(--marigold);
 /* touch targets: 44px minimum on standalone links */
 .site-footer a, .timeline .links a, .toc a { min-height: 44px; }
 .site-footer li + li { margin-top: 0; }
+
+/* footer contact card */
+.contact-card { display: block; margin-top: 24px; padding: 20px; max-width: 460px; border: 1px solid var(--forest-600); border-radius: 20px; background: var(--forest-800); }
+.contact-card img { flex: none; width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 2px solid var(--leaf); }
+.site-footer .contact-card p { margin: 0; max-width: none; }
+.cc-label { font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--leaf); font-weight: 600; }
+.cc-name { font-size: 1.375rem; font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; margin-top: 4px !important; }
+.cc-bio { color: var(--muted); font-size: 0.875rem; margin-bottom: 12px !important; }
+.cc-links { list-style: none; margin: 0; padding: 0; }
+.cc-links li { font-size: 0.875rem; color: var(--muted); line-height: 1.5; }
+.cc-links li + li { margin-top: 2px; }
+.cc-links a { min-height: 32px; }
+.site-footer .cc-links .pill { color: var(--forest-950); min-height: 44px; margin-bottom: 10px; padding: 0 22px; font-size: 0.9375rem; }
+.cc-head { display: flex; gap: 18px; align-items: center; }
+.cc-links { margin-top: 16px !important; }
+.site-footer .cc-links .pill { display: inline-flex; max-width: 100%; }
+@media (max-width: 420px) { .cc-head { flex-direction: column; align-items: flex-start; } .site-footer .cc-links .pill { white-space: normal; text-align: center; } }
+
+.site-footer .cc-links .pill .tg { flex: none; margin-right: 10px; }
