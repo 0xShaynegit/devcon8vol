@@ -290,3 +290,15 @@ details.disclosure > summary:focus-visible { outline: 3px solid var(--marigold);
 .tbl td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
 .prose h3 + .tbl-wrap { margin-top: 12px; }
 .page-hero-img { object-position: var(--pos, 60% 62%); }
+.tbl.wide { min-width: 640px; }
+
+.cols2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+@media (max-width: 760px) { .cols2 { grid-template-columns: 1fr; } }
+.panel li { color: var(--ink); }
+.timeline { grid-template-columns: repeat(3, 1fr); }
+.timeline .ist { color: var(--muted); font-size: 0.875rem; margin: 0; }
+.timeline li.done .ist { color: var(--forest-950); }
+@media (max-width: 980px) { .timeline { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .timeline { grid-template-columns: 1fr; } }
+.role:nth-child(6) { grid-column: span 2; }
+@media (max-width: 560px) { .role:nth-child(6) { grid-column: auto; } }
