@@ -1,3 +1,29 @@
+# working material, not part of the site
 .ua/
 .shots/
+.md/
 source/
+
+# tooling and editor output
+node_modules/
+__pycache__/
+*.pyc
+.wrangler/
+.vscode/
+.idea/
+*.log
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# secrets
+.env
+.env.*
+
+# retired or non-site files (kept locally)
+roles/devcomms.html
+docs/
+tools/
