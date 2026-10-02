@@ -351,7 +351,7 @@ details.disclosure > summary:focus-visible { outline: 3px solid var(--marigold);
 .guides-strip .eyebrow { margin-bottom: 16px; }
 .guides-strip .guide { min-height: 0; }
 @media (max-width: 980px) { .guides, .guides.three { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 560px) { .guides, .guides.three { grid-template-columns: 1fr; } .guide { min-height: 0; } }
+@media (max-width: 760px) { .guides, .guides.three { grid-template-columns: 1fr; } .guide { min-height: 0; } }
 .fact a { color: var(--leaf); text-underline-offset: 3px; }
 
 /* ---------- restaurant detail card (Mumbai guide) ---------- */
