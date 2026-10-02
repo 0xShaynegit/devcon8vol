@@ -213,7 +213,7 @@ details.disclosure > summary:focus-visible { outline: 3px solid var(--marigold);
 
 /* ---------- footer ---------- */
 .site-footer { background: var(--forest-950); border-top: 1px solid var(--forest-600); padding-block: 56px 40px; font-size: 0.9375rem; }
-.foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; }
+.foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr; gap: 32px; }
 .site-footer h3 { margin: 0 0 14px; font-size: 0.8125rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--leaf); }
 .site-footer ul { list-style: none; margin: 0; padding: 0; }
 .site-footer li + li { margin-top: 4px; }
@@ -325,3 +325,73 @@ details.disclosure > summary:focus-visible { outline: 3px solid var(--marigold);
 @media (max-width: 420px) { .cc-head { flex-direction: column; align-items: flex-start; } .site-footer .cc-links .pill { white-space: normal; text-align: center; } }
 
 .site-footer .cc-links .pill .tg { flex: none; margin-right: 10px; }
+
+/* ---------- Mumbai guides cards ---------- */
+.guides { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.guides.three { grid-template-columns: repeat(3, 1fr); }
+.guide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  padding: 24px;
+  border-radius: 20px;
+  background: var(--forest-800);
+  border: 1px solid var(--forest-600);
+  color: var(--ink);
+  text-decoration: none;
+  transition: transform 0.24s var(--ease-out), border-color 0.24s var(--ease-out);
+}
+.guide h3 { margin: 0 0 8px; font-size: 1.375rem; line-height: 1.15; letter-spacing: -0.015em; font-weight: 600; }
+.guide p { margin: 0; color: var(--muted); font-size: 0.9375rem; line-height: 1.5; }
+.guide .go { margin-top: auto; padding-top: 18px; font-weight: 600; color: var(--leaf); font-size: 0.9375rem; }
+.guide:focus-visible { outline: 3px solid var(--marigold); outline-offset: 3px; }
+@media (hover: hover) and (pointer: fine) { a.guide:hover { transform: translateY(-4px); border-color: var(--leaf); } }
+.guides-strip { padding-block: 8px 64px; }
+.guides-strip .eyebrow { margin-bottom: 16px; }
+.guides-strip .guide { min-height: 0; }
+@media (max-width: 980px) { .guides, .guides.three { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .guides, .guides.three { grid-template-columns: 1fr; } .guide { min-height: 0; } }
+.fact a { color: var(--leaf); text-underline-offset: 3px; }
+
+/* ---------- restaurant detail card (Mumbai guide) ---------- */
+.place { white-space: normal; }
+.place-i {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 22px; height: 22px;
+  margin: 0 0 0 6px; padding: 0;
+  border: 1px solid var(--forest-600);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--leaf);
+  font: 600 0.75rem/1 "Outfit", system-ui, sans-serif;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.place-i::after { content: ""; position: absolute; inset: -11px; }
+.place-i:focus-visible { outline: 3px solid var(--marigold); outline-offset: 2px; }
+@media (hover: hover) and (pointer: fine) { .place-i:hover { border-color: var(--leaf); } }
+.place-i[aria-expanded="true"] { background: var(--leaf); color: var(--forest-950); border-color: var(--leaf); }
+.place-card {
+  position: fixed;
+  z-index: 60;
+  width: min(320px, calc(100vw - 24px));
+  padding: 16px 18px;
+  border: 1px solid var(--leaf);
+  border-radius: 16px;
+  background: var(--forest-800);
+  color: var(--ink);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+.place-card[hidden] { display: none; }
+.place-card p { margin: 0; }
+.pc-title { font-size: 1.0625rem; font-weight: 600; letter-spacing: -0.01em; }
+.pc-area { margin-top: 2px; color: var(--muted); font-size: 0.8125rem; }
+.pc-list { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; margin: 12px 0; font-size: 0.875rem; }
+.pc-list dt { color: var(--leaf); font-weight: 600; }
+.pc-list dd { margin: 0; }
+.pc-about { font-size: 0.875rem; line-height: 1.45; }
+.pc-note { margin-top: 10px !important; padding-top: 10px; border-top: 1px solid var(--forest-600); color: var(--muted); font-size: 0.75rem; }

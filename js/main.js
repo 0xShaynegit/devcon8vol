@@ -26,4 +26,4 @@ document.addEventListener("click", (e) => {
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && nav.classList.contains("is-open")) { setOpen(false); btn.focus(); }
 });
-window.matchMedia("(min-width: 981px)").addEventListener("change", (e) => { if (e.matches) setOpen(false); });
+window.matchMedia("(min-width: 1281px)").addEventListener("change", (e) => { if (e.matches) setOpen(false); });
