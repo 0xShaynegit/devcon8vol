@@ -395,3 +395,7 @@ details.disclosure > summary:focus-visible { outline: 3px solid var(--marigold);
 .pc-list dd { margin: 0; }
 .pc-about { font-size: 0.875rem; line-height: 1.45; }
 .pc-note { margin-top: 10px !important; padding-top: 10px; border-top: 1px solid var(--forest-600); color: var(--muted); font-size: 0.75rem; }
+
+.local-tip { margin: 24px 0; padding: 4px 0 4px 20px; border-left: 3px solid var(--marigold); max-width: 62ch; }
+.local-tip p { margin: 0 0 6px; font-style: italic; }
+.local-tip cite { display: block; font-style: normal; font-size: 0.8125rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--marigold); }
