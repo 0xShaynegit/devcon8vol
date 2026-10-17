@@ -1,0 +1,8 @@
+/roles/info-desk /roles/guest-services 301
+/roles/info-desk.html /roles/guest-services.html 301
+/roles/meeting-rooms /roles/special-rooms 301
+/roles/meeting-rooms.html /roles/special-rooms.html 301
+/roles/stage-and-speaker /roles/stage 301
+/roles/stage-and-speaker.html /roles/stage.html 301
+/roles/general-floor /roles/general-floor-and-runners 301
+/roles/general-floor.html /roles/general-floor-and-runners.html 301
